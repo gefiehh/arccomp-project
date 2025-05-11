@@ -133,7 +133,8 @@ label start:
                     leshiy "Леший нахмурился, сдвинув свои густые брови к носу. Он явно был зол."
                     "Старик медленно подошел к Варваре, пока не сократил расстояние до вытянутой руки."
                     "Он схватил девушку и утащил в лесную чащу..."
-                    show die_in_forest with dissolve
+                    scene die_in_forest with fade
+                    pause
                     jump riddles
 
     show forest_night with fade
