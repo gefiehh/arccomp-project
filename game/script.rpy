@@ -16,6 +16,8 @@ define onfoot = False
 # Игра начинается здесь:
 label start:
 
+        play music "les.mp3" fadein 1.0
+        
         scene bg home with fade
 
         "В Залесье светало, первые лучи солнца пробивались в окно избы, а петухи завели свой утренний перекрик."
