@@ -352,8 +352,8 @@ screen main_menu():
     ## Этот тег гарантирует, что любой другой экран с тем же тегом будет
     ## заменять этот.
     tag menu
-
-    add gui.main_menu_background
+    add "menu.png"
+    
 
     ## Эта пустая рамка затеняет главное меню.
     frame:
