@@ -2,9 +2,29 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 35: end of line expected.
-    show exmp3 in front of mother with dissilve
-                        ^
+File "game/dragon.rpy", line 203: end of line expected.
+    jump fight1 with fade
+                ^
+
+File "game/dragon.rpy", line 212: end of line expected.
+    jump fight1 with fade
+                ^
+
+File "game/dragon.rpy", line 222: end of line expected.
+    jump fight3 with fade
+                ^
+
+File "game/dragon.rpy", line 232: end of line expected.
+    jump fight1 with fade
+                ^
+
+File "game/dragon.rpy", line 241: end of line expected.
+    jump fight2 with fade
+                ^
+
+File "game/dragon.rpy", line 251: end of line expected.
+    jump fight3 with fade
+                ^
 
 Ren'Py Version: Ren'Py 8.3.7.25031702
-Thu May  8 22:35:10 2025
+Tue May 13 18:19:07 2025

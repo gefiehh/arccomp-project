@@ -1,28 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 35, in script
-    show exmp3 with dissilve
-  File "game/script.rpy", line 35, in <module>
-    show exmp3 with dissilve
-NameError: name 'dissilve' is not defined
+  File "game/script.rpy", line 97, in script
+    scene bg house window fade
+Exception: Image 'bg house' does not accept attributes 'window fade'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 35, in script
-    show exmp3 with dissilve
-  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\ast.py", line 1370, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\python.py", line 1218, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 35, in <module>
-    show exmp3 with dissilve
-NameError: name 'dissilve' is not defined
+  File "game/script.rpy", line 97, in script
+    scene bg house window fade
+  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\ast.py", line 1258, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\ast.py", line 1087, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\exports\displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'bg house' does not accept attributes 'window fade'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.7.25031702
 ArcompProject 1.0
-Thu May  8 22:36:13 2025
+Fri May 16 16:47:33 2025
