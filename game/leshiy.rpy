@@ -1,11 +1,11 @@
 define leshiy = Character("Леший", color="#c8ffc8")
 
 label les:
-    scene forest_day with fade
+    scene bg forest
     "Впереди показалась фигурка маленького старичка."
     "Нос его был больше похож на шишку, одежда состояла из коры и листьев, а длинная борода касалась земли."
 
-    show leshiy at center
+    show leshiy at center with dissolve
     leshiy "Стой, странница. Я — Леший, хозяин этого леса. Чего тебе понадобилось на моей территории?"
 
     gg "Я — богатырша Варвара, по поручению князя отправилась в дальний путь. Змей чудовищный посягнул на наши земли. Я одолею его и избавлю людей от бед."
@@ -13,7 +13,9 @@ label les:
     leshiy "Хорошо, но так просто ты не пройдешь. Коль твой путь пролегает по моему лесу, реши мои задачки, тогда отпущу тебя."
 
     label riddles:
-        show forest_path with dissolve
+        scene bg forest_path with fade
+        show leshiy at center with dissolve
+
         leshiy "Первая задачка. Чему равна производная от натурального логарифма?"
 
         menu:
@@ -24,7 +26,6 @@ label les:
             "3) x^2":
                 jump wrong
 
-        show forest_path with dissolve
         leshiy "Вторая задачка. Какую траву можно узнать даже с закрытыми глазами?"
 
         menu:
@@ -35,7 +36,6 @@ label les:
             "3) Крапива":
                 pass
 
-        show forest_path with dissolve
         leshiy "Третья задачка. Какая цифра уменьшится на треть, если её перевернуть?"
 
         menu:
@@ -47,7 +47,7 @@ label les:
                 jump wrong
 
                 label wrong:
-                    show forest_path with dissolve
+
                     leshiy "Леший нахмурился, сдвинув свои густые брови к носу. Он явно был зол."
                     "Старик медленно подошел к Варваре, пока не сократил расстояние до вытянутой руки."
                     "Он схватил девушку и утащил в лесную чащу..."
@@ -55,7 +55,12 @@ label les:
                     pause
                     jump riddles
 
-    scene night_forest with fade
+
+    scene bg night_forest with fade
+    show leshiy at center with dissolve
+
     leshiy "Вижу, действительно достойна ты сразиться со змеем и спасти род человеческий. Не посрамишь достоинства людского. Ты готова, можешь идти по моему лесу."
 
-    
+    jump dragon
+
+    return    
