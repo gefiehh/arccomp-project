@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/dragon.rpy", line 34, in script
-    if bird:
-  File "game/dragon.rpy", line 34, in <module>
-    if bird:
-NameError: name 'bird' is not defined
+  File "game/dragon.rpy", line 263, in script
+    bird "Давай, Варвара: Что такое переменная в программировании?"
+Exception: Sayer b'bird' is not a function or string.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/dragon.rpy", line 34, in script
-    if bird:
-  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\ast.py", line 1856, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\python.py", line 1218, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\python.py", line 1211, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/dragon.rpy", line 34, in <module>
-    if bird:
-NameError: name 'bird' is not defined
+  File "game/dragon.rpy", line 263, in script
+    bird "Давай, Варвара: Что такое переменная в программировании?"
+  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\ast.py", line 2586, in execute
+    Say.execute(self)
+  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\ast.py", line 600, in execute
+    raise Exception("Sayer %s is not a function or string." % self.who.encode("utf-8"))
+Exception: Sayer b'bird' is not a function or string.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.7.25031702
 ArcompProject 1.0
-Fri May 30 16:57:05 2025
+Fri May 30 17:33:33 2025

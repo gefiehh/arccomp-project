@@ -17,7 +17,6 @@ label dragon:
     show dragon three with dissolve
 
     if donkey:
-        show donkey at right with dissolve
         menu:
             "Полно разорять деревни. Его кровь это малое зло, коим я могу вернуть мир всем местным. В бой.":
                 pass
@@ -261,7 +260,7 @@ label gameoverstickfight3:
 
 label birdfight1:
 
-    bird "Давай, Варвара: Что такое переменная в программировании?"
+    firebird "Давай, Варвара: Что такое переменная в программировании?"
 
     menu:
         "Участок памяти компьютера, который может содержать изменяемое значение":
