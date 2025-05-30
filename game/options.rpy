@@ -12,7 +12,7 @@
 ##
 ## Символы "_()", окружающие название, отмечают его как пригодное для перевода.
 
-define config.name = _("ArcompProject")
+define config.name = _("Былина о богатырше Варваре")
 
 
 ## Определяет, показывать ли заголовок, данный выше, на экране главного меню.
@@ -23,7 +23,7 @@ define gui.show_name = True
 
 ## Версия игры.
 
-define config.version = "1.0"
+define config.version = ""
 
 
 ## Текст, помещённый в экран "Об игре". Поместите текст между тройными скобками.
@@ -208,4 +208,7 @@ init python:
 ## Имя пользователя и название проекта, ассоциированные с проектом на itch.io,
 ## разделённые дробью.
 
-# define build.itch_project = "renpytom/test-project"
+define build.itch_project = "renpytom/test-project"
+define config.mouse = {
+    "default": [("cursor.png", 0, 0)],
+}

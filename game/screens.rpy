@@ -368,8 +368,7 @@ screen main_menu():
         vbox:
             style "main_menu_vbox"
 
-            text "[config.name!t]":
-                style "main_menu_title"
+            add "logo.png"
 
             text "[config.version]":
                 style "main_menu_version"
@@ -385,7 +384,7 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    background "main_menu_panel.png"
 
 style main_menu_vbox:
     xalign 1.0
