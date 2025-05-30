@@ -2,7 +2,7 @@ define dragon = Character("Змей", color="#c8ffc8")
 
 label dragon:
 
-    scene bg village with fade
+    scene bg ruin with fade
 
     "На горизонте показалась деревня"
     "Увидев ее, Варвара ужаснулась: пустые полуразрушенные дома безмолвно стояли, не подавая признаков жизни"
@@ -197,6 +197,8 @@ label fight3:
     pause
     hide dragon zero with dissolve
 
+    $ dragon_dead_by_weapon = True
+
     jump final
 
     return
@@ -331,6 +333,8 @@ label birdfight3:
     pause
     hide dragon zero burn with dissolve
 
+    $ dragon_dead_by_fire = True
+
     jump final
 
     return
@@ -383,6 +387,6 @@ label final:
     "Теперь они могли спать спокойно, зная, что опасность миновала"
     "Варвара улыбнулась, чувствуя гордость и удовлетворение от выполненного задания"
 
-    pause
+    jump achive
 
     return

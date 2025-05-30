@@ -1,22 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/dragon.rpy", line 263, in script
-    bird "Давай, Варвара: Что такое переменная в программировании?"
-Exception: Sayer b'bird' is not a function or string.
+  File "game/bonus_dialogue_dragon.rpy", line 69, in script
+    scene bg home horse with fade
+Exception: Image 'bg home' does not accept attributes 'horse'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/dragon.rpy", line 263, in script
-    bird "Давай, Варвара: Что такое переменная в программировании?"
-  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\ast.py", line 2586, in execute
-    Say.execute(self)
-  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\ast.py", line 600, in execute
-    raise Exception("Sayer %s is not a function or string." % self.who.encode("utf-8"))
-Exception: Sayer b'bird' is not a function or string.
+  File "game/bonus_dialogue_dragon.rpy", line 69, in script
+    scene bg home horse with fade
+  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\ast.py", line 1258, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\ast.py", line 1087, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\exports\displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Users\Viktoria\Desktop\renpy-8.3.7-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'bg home' does not accept attributes 'horse'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.7.25031702
 ArcompProject 1.0
-Fri May 30 17:33:33 2025
+Fri May 30 18:38:07 2025

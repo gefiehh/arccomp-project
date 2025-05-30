@@ -15,6 +15,9 @@ label les:
     if bird:
         menu:
             "1) Попросить Жар-птицу разобраться":
+
+                $ leshi_dead = True
+
                 gg "Нет, старик, так дело не пойдет. А ну, Жар-птица, подпали-ка ему перышки"
                 "Находившаяся все это время рядом птица, взлетела над Лешим, набрала воздуха и обдала старика языками пламени. Он попятился и спешно захлопал по бороде, пытаясь потушить ее"
                 hide leshiy with dissolve
@@ -31,6 +34,9 @@ label les:
 
     else:
         label riddles:
+
+            $ leshi_alive = True
+
             scene bg forest_path with fade
             show leshiy at center with dissolve
 
