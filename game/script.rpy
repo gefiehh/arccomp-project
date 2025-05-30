@@ -13,6 +13,14 @@ define donkey = False
 define hobbyhorse = False
 define onfoot = False
 
+# Доастижения
+define leshi_alive = False
+define leshi_dead = False
+define dragon_good = False
+define dragon_bad = False
+define dragon_dead_by_weapon = False
+define dragon_dead_by_fire = False
+
 # Игра начинается здесь:
 label start:
 
@@ -66,7 +74,7 @@ label start:
                         gg "Я справлюсь с ним даже голыми руками, а раз в год и палка стреляет"
                         $ stick = True
 
-        scene bg exmp1 with fade
+        scene bg stable with fade
         show horses with dissolve
 
         "Выбрав оружие, Варвара отправилась в конюшню"
